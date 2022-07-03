@@ -1,3 +1,5 @@
+# pytest -vs --tb=line --language=en test_product_page.py
+
 from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
 import math
 import time
@@ -5,6 +7,7 @@ import time
 from selenium.webdriver.support.wait import WebDriverWait  # (Проблема с accept)
 from selenium.common.exceptions import TimeoutException  # (Проблема с accept)
 from selenium.webdriver.support import expected_conditions as EC    # (Проблема с accept)
+
 
 class BasePage():
     def __init__(self, browser, url, timeout=10):
